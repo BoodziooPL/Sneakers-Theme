@@ -62,7 +62,7 @@
     border-top-right-radius: 0px;
 }
 
-.info-section{
+.benefits-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -83,4 +83,63 @@
     text-align: center;
     padding: 15px;
     
+}
+
+.featured-section{
+    background-color: #212327;
+    display: flex;
+    flex-direction: column;
+    color: #acb3b8;
+}
+
+.desc-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(207, 207, 207);
+    margin-top: 1.2em;
+}
+.underline{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 100%; 
+    background-color: #7d5f5e;
+    border-radius: 20px;
+}
+
+
+.products-tiles{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.product-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    padding: 5px;
+}
+
+.products-tiles img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
 }
