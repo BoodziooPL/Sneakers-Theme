@@ -126,6 +126,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
+    
 }
 
 .product-tile{
@@ -135,6 +136,7 @@
     width: 50%;
     height: 40%;
     padding: 5px;
+    
 }
 
 .products-tiles img {
@@ -152,6 +154,8 @@
     height: 100vh;
     font-weight: 900;
     font-size: 2.5em;
+    color: white;
+    
 }
 
 .category-btn{
@@ -160,7 +164,7 @@
     font-weight: 600;
     border: none;
     border-radius: 5px;
-    background-color: #acb3b8;
+    background-color: #212327;
     color: whitesmoke;
     
 
@@ -173,10 +177,13 @@
     height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
     
+}
+.category-tile h4{
+    -webkit-text-stroke: #2b313d 1px;
 }
 .sneakers-tile{
     background-image: url(/assets/images/sneakers.webp);
@@ -189,3 +196,53 @@
 .clothes-tile{
     background-image: url(/assets/images/clothes.webp);
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #ddc01a;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  footer{
+    background-color: #171717;
+    width: 100%;
+    color: white;
+  }
+
+  .categories, .informations, .help, .contact, .rights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-top: 1em;
+  }
+
+  .categories, .informations, .help, .contact, a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+  }
+
+  .underline-footer{
+    margin: auto;
+    margin-top: 1em;
+  }
+
+  .rights{
+    font-weight: 300;
+    font-size: 14px;
+  }
