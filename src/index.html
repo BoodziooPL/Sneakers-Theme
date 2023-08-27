@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaker Store</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
 </head>
 <body>
 
@@ -13,14 +14,49 @@
     <header>
         
         <!-- navigation -->
-        
+
+        <!-- Hidden/Visible navi hamburger -->
+        <div class="menu-navi hidden">
+            <div class="open-menu">
+                <div class="span_row">
+                    <h1>Sneaker</h1>
+                    <span class="cursive-text">Store</span>
+                </div>
+                <div class="close-menu pointer">
+                    <img src="/assets/icons/close.svg" alt="close menu icon">
+                </div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-menu">
+                <ul>
+                    <li>
+                        <a href="#">Shoes</a>
+                    </li>
+                    <li>
+                        <a href="#">Clothes</a>
+                    </li>
+                    <li>
+                        <a href="#">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-search">
+                <input type="text" value="" placeholder="Find Products">
+                <button class="search-button pointer">
+                    <img src="/assets/icons/search.svg" alt="search button in navi">
+                </button>
+            </div>
+        </div>
+
+        <!-- Nav Panel -->
         <nav class="navigation">
-            <span class="pointer">
+            <span class="hamburger pointer">
                 <img src="/assets/icons/hamburger.svg" alt="hamburger menu">
             </span>
-            <span class="span_row">
-                <h1>Sneaker <span>Store</span></h1>
-            </span>
+            <div class="span_row">
+                <h1>Sneaker</h1>
+                <span class="cursive-text">Store</span>
+            </div>
             <span class="pointer">
                 <img src="/assets/icons/card.svg" alt="card icon">
             </span>            

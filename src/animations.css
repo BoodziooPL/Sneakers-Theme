@@ -1,0 +1,26 @@
+/* animations */
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  .menu-navi.flex {
+    animation-name: slideIn;
+  }
+  
+  .menu-navi.hidden {
+    animation-name: slideOut;
+  }

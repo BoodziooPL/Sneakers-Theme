@@ -1,14 +1,14 @@
 let hamburgerMenu = document.querySelector('.hamburger');
-let hamburgerVisible = document.querySelector('.hidden');
-let menuHide = document.querySelector('.hide')
+let hamburgerVisible = document.querySelector('.menu-navi')
+let menuHide = document.querySelector('.close-menu')
 
 const toggleHamburger = () => {
-    hamburgerVisible.classList.toggle('flex');
     hamburgerVisible.classList.remove('hidden');
+    hamburgerVisible.classList.add('flex')
 };
 const hideMenu = () => {
-    hamburgerVisible.classList.add('hidden')
     hamburgerVisible.classList.remove('flex')
+    hamburgerVisible.classList.add('hidden')
 };
 
 hamburgerMenu.addEventListener('click', toggleHamburger);
