@@ -30,6 +30,8 @@
 
 /* HEADER CSS */
 
+
+/* Navigation */
 .navigation{
     width: 100%;
     height: 10vh;
@@ -56,7 +58,7 @@
 
 }
 
-.menu-navi{
+.menu-navi, .shopping-cart-menu{
     position: absolute;
     background-color: #2b313d;
     z-index: 1;
@@ -65,8 +67,7 @@
     flex-direction: column;
     align-items: center;
     animation-duration: 0.5s; 
-    animation-timing-function: ease-in; 
-    
+    animation-timing-function: ease-in;  
 }
 
 .open-menu{
@@ -78,9 +79,9 @@
     color: whitesmoke;
 }
 
-.open-menu img{
-    width: 60px;
-    height: 60px;
+.open-menu img, .close-cart img{
+    width: 40px;
+    height: 40px;
     filter: invert(100%);
 }
 
@@ -129,6 +130,94 @@
 .input-search input:focus{
     outline: none;
 }
+
+/* Shopping Menu Cart */
+
+.shopping-cart-menu{
+    margin-left: 20%;
+    color: white;
+    padding-top: 5em;
+}
+
+.shopping-cart-menu .close-cart{
+    position: absolute;
+    left: 1.5em;
+    top: 1em;
+}
+
+
+.header-cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.header-cart img{
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+
+}
+.product-cart{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    border-bottom: #ddc01a 1px solid;
+    
+}
+
+.image-product-cart{
+    width: 50%;
+    height: auto;
+}
+
+.product-cart img{
+    width: 80%;
+    height: 50%;
+}
+
+.info-product-cart{
+    width: 50%;
+    font-weight: 300;
+}
+
+.info-product-cart h6{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.summary-product-cart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.checkout-from-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.checkout-from-cart button{
+    background-color: #212327;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 3em;
+    color: white;
+    font-weight: 300;
+}
+
+/* WELCOME HEADER */
+
 .welcome-container{
     width: 100%;
     height: 90vh;

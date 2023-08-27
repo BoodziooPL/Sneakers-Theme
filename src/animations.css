@@ -1,5 +1,7 @@
 /* animations */
 
+
+/* animation for hamburgerMenu */
 @keyframes slideIn {
     0% {
       transform: translateX(-100%);
@@ -9,18 +11,22 @@
     }
   }
   
-  @keyframes slideOut {
+
+  /* animation for cartMenu */
+
+  @keyframes slideInCart {
     0% {
-      transform: translateX(0);
+      transform: translateX(100%);
     }
     100% {
-      transform: translateY(100%);
+      transform: translateX(0);
     }
+  }
+  
+
+  .shopping-cart-menu{
+    animation-name: slideInCart;
   }
   .menu-navi.flex {
     animation-name: slideIn;
-  }
-  
-  .menu-navi.hidden {
-    animation-name: slideOut;
   }
