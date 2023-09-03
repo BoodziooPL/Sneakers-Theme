@@ -7,28 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <section>
+ <main>
     <form action="/order" method="post" class="order-form">
-        <!-- Your Order -->
-        <h2>Your Order</h2>
-        <table class="order-table">
-            <tr>
-                <th class="table-header">Product</th>
-                <th class="table-header">Price</th>
-                <th class="table-header">Quantity</th>
-                <th class="table-header">Total</th>
-            </tr>
-            <tr>
-                <td>Nike air max 90</td>
-                <td>129.99PLN</td>
-                <td>1</td>
-                <td>129.99PLN</td>
-            </tr>
-        </table>
-        <p class="order-total">Total: 129.99 PLN</p>
-    
         <!-- Shipping Information -->
-        <h3>Shipping Information</h3>
+        <h3>Shipping Information:</h3>
+        <section class="shipping-information">
         <label for="first_name" class="form-label">First Name:</label><br>
         <input type="text" id="first_name" name="first_name" class="form-input" required><br><br>
     
@@ -43,9 +26,9 @@
     
         <label for="postal_code" class="form-label">Postal Code:</label><br>
         <input type="text" id="postal_code" name="postal_code" class="form-input" required><br><br>
-    
+        </section>
         <!-- Delivery and Payment Options -->
-        <h3>Delivery and Payment</h3>
+        <h3>Delivery and Payment:</h3>
     
         <!-- Delivery Method Selection -->
         <fieldset class="delivery-method">
@@ -80,11 +63,36 @@
             <input type="radio" id="payment_on_pickup" name="payment" value="on_pickup" class="radio-input" required>
             <label for="payment_on_pickup" class="radio-label">Payment on Pickup</label><br>
         </fieldset>
+        <!-- Checkout produducts -->
+        <div class="cart-section">
+            <h3>Your Cart</h3>
+            <div class="cart-item">
+              <img src="/assets/products/av1-1.jpg" alt="Product Image" class="cart-item-image">
+              <div class="cart-item-details">
+                <p class="cart-item-name">Product Name</p>
+                <p class="cart-item-quantity">Quantity: 2</p>
+                <p class="cart-item-price">Price: $24.99</p>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="/assets/products/as1-1.jpg" alt="Product Image" class="cart-item-image">
+              <div class="cart-item-details">
+                <p class="cart-item-name">Another Product</p>
+                <p class="cart-item-quantity">Quantity: 1</p>
+                <p class="cart-item-price">Price: $14.99</p>
+              </div>
+            </div>
+            <div class="cart-total">
+              <p class="cart-total-label">Total:</p>
+              <p class="cart-total-amount">$39.98</p>
+            </div>
+          </div>
+          
     
         <!-- Submit Button -->
         <input type="submit" value="Place Order" class="submit-button">
     </form>
     
- </section>   
+</main>   
 </body>
 </html>
