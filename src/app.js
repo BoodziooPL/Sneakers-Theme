@@ -1,13 +1,17 @@
-let hamburgerMenu = document.querySelector('.hamburger');
-let hamburgerVisible = document.querySelector('.menu-navi')
-let menuHide = document.querySelector('.close-menu')
-let shoppingCart = document.querySelector('.shopping-cart-menu')
-let shopCart = document.querySelector('.shop-cart')
-let cartHide = document.querySelector('.close-cart')
+
+// Variables
+const hamburgerMenu = document.querySelector('.hamburger');
+const hamburgerVisible = document.querySelector('.menu-navi')
+const menuHide = document.querySelector('.close-menu')
+const shoppingCart = document.querySelector('.shopping-cart-menu')
+const shopCart = document.querySelector('.shop-cart')
+const cartHide = document.querySelector('.close-cart')
 const minusBtn = document.querySelector('.minus-btn');
 const plusBtn = document.querySelector('.plus-btn');
 const qtyInput = document.getElementById('qtyInput');
 
+
+// Declarate functions
 const toggleHamburger = () => {
     hamburgerVisible.classList.remove('hidden');
     hamburgerVisible.classList.add('flex')
@@ -38,6 +42,8 @@ const upValue = () => {
     qtyInput.value = parseInt(qtyInput.value) + 1
 }
 
+
+// Calling functions
 hamburgerMenu.addEventListener('click', toggleHamburger);
 menuHide.addEventListener('click',hideMenu)
 shopCart.addEventListener('click',shopCartOpen)

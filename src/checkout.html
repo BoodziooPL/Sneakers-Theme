@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section>
+    <form action="/order" method="post" class="order-form">
+        <!-- Your Order -->
+        <h2>Your Order</h2>
+        <table class="order-table">
+            <tr>
+                <th class="table-header">Product</th>
+                <th class="table-header">Price</th>
+                <th class="table-header">Quantity</th>
+                <th class="table-header">Total</th>
+            </tr>
+            <tr>
+                <td>Nike air max 90</td>
+                <td>129.99PLN</td>
+                <td>1</td>
+                <td>129.99PLN</td>
+            </tr>
+        </table>
+        <p class="order-total">Total: 129.99 PLN</p>
+    
+        <!-- Shipping Information -->
+        <h3>Shipping Information</h3>
+        <label for="first_name" class="form-label">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" class="form-input" required><br><br>
+    
+        <label for="last_name" class="form-label">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" class="form-input" required><br><br>
+    
+        <label for="address" class="form-label">Address:</label><br>
+        <input type="text" id="address" name="address" class="form-input" required><br><br>
+    
+        <label for="city" class="form-label">City:</label><br>
+        <input type="text" id="city" name="city" class="form-input" required><br><br>
+    
+        <label for="postal_code" class="form-label">Postal Code:</label><br>
+        <input type="text" id="postal_code" name="postal_code" class="form-input" required><br><br>
+    
+        <!-- Delivery and Payment Options -->
+        <h3>Delivery and Payment</h3>
+    
+        <!-- Delivery Method Selection -->
+        <fieldset class="delivery-method">
+            <legend class="fieldset-legend">Select a delivery method:</legend>
+    
+            <!-- Courier Delivery Option -->
+            <input type="radio" id="delivery_courier" name="delivery" value="courier" class="radio-input" required>
+            <label for="delivery_courier" class="radio-label">Courier (15 PLN)</label><br>
+    
+            <!-- Postal Delivery Option -->
+            <input type="radio" id="delivery_postal" name="delivery" value="postal" class="radio-input" required>
+            <label for="delivery_postal" class="radio-label">Postal (10 PLN)</label><br>
+    
+            <!-- Personal Pickup Option -->
+            <input type="radio" id="delivery_personal_pickup" name="delivery" value="personal_pickup" class="radio-input" required>
+            <label for="delivery_personal_pickup" class="radio-label">Personal Pickup (0 PLN)</label><br>
+        </fieldset>
+    
+        <!-- Payment Method Selection -->
+        <fieldset class="payment-method">
+            <legend class="fieldset-legend">Select a payment method:</legend>
+    
+            <!-- Credit Card Payment Option -->
+            <input type="radio" id="payment_credit_card" name="payment" value="credit_card" class="radio-input" required>
+            <label for="payment_credit_card" class="radio-label">Credit Card</label><br>
+    
+            <!-- Bank Transfer Payment Option -->
+            <input type="radio" id="payment_bank_transfer" name="payment" value="bank_transfer" class="radio-input" required>
+            <label for="payment_bank_transfer" class="radio-label">Bank Transfer</label><br>
+    
+            <!-- Payment on Pickup Option -->
+            <input type="radio" id="payment_on_pickup" name="payment" value="on_pickup" class="radio-input" required>
+            <label for="payment_on_pickup" class="radio-label">Payment on Pickup</label><br>
+        </fieldset>
+    
+        <!-- Submit Button -->
+        <input type="submit" value="Place Order" class="submit-button">
+    </form>
+    
+ </section>   
+</body>
+</html>
